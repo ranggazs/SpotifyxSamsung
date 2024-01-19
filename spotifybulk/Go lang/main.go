@@ -97,7 +97,7 @@ func main() {
    \_/ \_/ \_/ \_/ \_/ \_/ \_/ 
  ` + "\n")
 
-	password := "chsangkara"
+	password := "celoskuy"
 	utilsClient := NewSpotifyAPI(nil, password)
 
 	file, _ := os.OpenFile("spotify_acc.txt", os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0644)
@@ -126,11 +126,11 @@ func main() {
 		json.Unmarshal([]byte(create), &createResponse)
 
 		if createResponse.Status == 1 {
-			color.New(color.FgGreen).Println("   > Email : " + username + "@chsangkara.com" + " | " + "Password : " + password + " | CREATE ACCOUNT SUCCESS")
-			fmt.Fprintf(file, "Email : %s@chsangkara.com | Password : %s | CREATE ACCOUNT SUCCESS\n", username, password)
+			color.New(color.FgGreen).Println("   > Email : " + username + "@lapak.asia" + " | " + "Password : " + password + " | CREATE ACCOUNT SUCCESS")
+			fmt.Fprintf(file, "Email : %s@lapak.asia | Password : %s | CREATE ACCOUNT SUCCESS\n", username, password)
 			count++
 		} else {
-			color.New(color.FgRed).Println("   > Email : " + username + "@chsangkara.com" + " | " + "Password : " + password + " | CREATE ACCOUNT FAILED")
+			color.New(color.FgRed).Println("   > Email : " + username + "@lapak.asia" + " | " + "Password : " + password + " | CREATE ACCOUNT FAILED")
 		}
 	}
 }
